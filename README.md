@@ -1,1 +1,9 @@
 # 01-17-PrositNeujahr
+
+Bei diesem Project geht es um einen First-Person-Mini-Shooter.<br>
+Mit Hilfe von einem Racketenwerfer können Weihnachtsbäume und Schneemänner abgeschossen werden.<br>
+
+Uns hat bei diesem Projekt vor allem gefallen, dass wir uns selbst was überlegen konnten und uns ausprobieren durften.
+
+https://github.com/user-attachments/assets/ed04e8a7-11f1-4aae-9870-4a17a0a9c131
+
