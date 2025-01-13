@@ -1,3 +1,4 @@
+// UIManager-Skript: Unverändert, außer dass es zentral Punkte verwaltet
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,8 +8,8 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public TMP_Text scoreText; // UI-Textfeld für den Score
-    public int score = 0;     // Der aktuelle Score
-    
+    public int score;     // Der aktuelle Score
+
     // Methode zum Aktualisieren des Scores
     public void UpdateScore(int scoreToAdd)
     {
@@ -20,7 +21,7 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        if(score == 10)
+        if (score >= 10)
         {
             SceneManager.LoadScene("Demo");
         }

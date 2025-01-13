@@ -193,7 +193,6 @@ GameObject:
   - component: {fileID: 988175382482574601}
   - component: {fileID: 91128310120046435}
   - component: {fileID: 7870026953430193671}
-  - component: {fileID: 991464307890468210}
   m_Layer: 0
   m_Name: Rocket Projectile
   m_TagString: Rocket
@@ -285,19 +284,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &991464307890468210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4092872357349286730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b8d40fbfa2e4d04e8cf3afd3dc2866f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiManager: {fileID: 7303576234146174020, guid: d6e5cc83a9c23794ebb7cedb0a52c597, type: 3}
 --- !u!1001 &4483190134865152260
 PrefabInstance:
   m_ObjectHideFlags: 0
