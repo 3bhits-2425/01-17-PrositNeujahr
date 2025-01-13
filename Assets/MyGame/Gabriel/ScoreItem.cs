@@ -4,23 +4,20 @@ using UnityEngine;
 
 public class ScoreItem : MonoBehaviour
 {
-    public UIManager uiManager; // Reference to UIManager to update the score
-    public int Score = 0;
+    public UIManager uiManager; // Referenz auf den UIManager
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(UnityEngine.Collision collision)
     {
-        Debug.Log("Kollision erkannt!");
-
-        // Check if the Rocket collides with a Tree or Snowman
-        if (collision.gameObject.CompareTag("Tree"))
+        // Prüfen, ob die Rakete einen "Tree" oder "Snowman" trifft
+        if (collision.gameObject.tag == "Tree")
         {
-            Debug.Log("Baum getroffen! Punkte abgezogen.");
-            uiManager.UpdateScore(Score+5); // Adjust score for hitting a Tree
+            Debug.Log("Tree getroffen! Punkte: 5");
+            uiManager.UpdateScore(5); // 5 Punkte für einen Tree
         }
-        else if (collision.gameObject.CompareTag("Snowman"))
+        else if (collision.gameObject.tag == "Snowman")
         {
-            Debug.Log("Schneemann getroffen! Punkte hinzugefügt.");
-            uiManager.UpdateScore(Score+2); // Adjust score for hitting a Snowman
+            Debug.Log("Snowman getroffen! Punkte: 2");
+            uiManager.UpdateScore(2); // 2 Punkte für einen Snowman
         }
     }
 }
