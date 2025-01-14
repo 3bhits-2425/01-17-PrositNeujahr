@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        if (score >= 10)
+        if (score >= 20)
         {
             SceneManager.LoadScene("Demo");
         }
