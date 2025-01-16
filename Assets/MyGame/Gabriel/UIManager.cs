@@ -15,7 +15,7 @@ public class UIManager : MonoBehaviour
     {
         score += scoreToAdd; // Punkte hinzufügen
         Debug.Log("Score: " + score); // Im Log anzeigen
-        scoreText.text = "Score: " + score; // Im UI anzeigen
+        scoreText.text = "Score: " + score + " / 20"; // Im UI anzeigen
         Debug.Log("Score angezeigt");
     }
 
@@ -23,7 +23,12 @@ public class UIManager : MonoBehaviour
     {
         if (score >= 20)
         {
-            SceneManager.LoadScene("Demo");
-        }
+            //SceneManager.LoadScene("EndScene");
+            foreach (Transform child in transform) {
+                if (child.CompareTag("Rocket"))
+                {
+                    Destroy(child.gameObject);
+                }
+            } }
     }
 }
