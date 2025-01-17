@@ -23,7 +23,7 @@ public class UIManager : MonoBehaviour
     {
         if (score >= 20)
         {
-            //SceneManager.LoadScene("EndScene");
+            SceneManager.LoadScene("EndScene");
             foreach (Transform child in transform) {
                 if (child.CompareTag("Rocket"))
                 {
